@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    color: #333;
+}
+
+header {
+    padding: 20px;
+    width: 100%;
+    background-color: #DDA0DD;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+
+.management {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#addrowdata {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; 
+    justify-content: center;
+}
+
+#addrowdata label {
+    display: block;
+    padding: 0%;
+    margin-left: 15px;
+    font-size: 17px;
+    color: #333333;
+    text-align: left;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+#addrowdata input, select, button {
+    height: 50px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-left: 15px;
+    border: solid 1px white;
+    border-radius: 7px;
+    text-align: left;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+input::placeholder {
+    color: grey;
+    opacity: 1;
+}
+
+select:invalid {
+    color: gray;
+}
+
+input:focus, select:focus {
+    outline: solid 2px #DDA0DD;
+}
+
+#addrowdata button {
+    background-color: #DDA0DD;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#addrowdata button:hover {
+    background-color: #C9A0DC; /* Slightly darker plum */
+    color: #FFFFFF; /* White */
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+th, td {
+    border: solid 2px lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #C9A0DC;
+    color: white;
+}
+
+tbody td {
+    background-color: white;
+    color: #333333;
+    font-weight: 500;
+}
+
+table button {
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    margin: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.edit-btn {
+    background-color: blue;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: darkblue;
+}
